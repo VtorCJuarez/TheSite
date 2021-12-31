@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ||Blog||</title>
+    <link>https://username.github.io/post/</link>
+    <description>Recent content in Posts on ||Blog||</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>victorcjuarez@ieee.org (VictorCJuarez)</managingEditor>
+    <webMaster>victorcjuarez@ieee.org (VictorCJuarez)</webMaster>
+    <lastBuildDate>Sat, 25 Dec 2021 23:40:00 -0300</lastBuildDate><atom:link href="https://username.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La IEEE</title>
+      <link>https://username.github.io/post/post4/</link>
+      <pubDate>Sat, 25 Dec 2021 23:40:00 -0300</pubDate>
+      <author>victorcjuarez@ieee.org (VictorCJuarez)</author>
+      <guid>https://username.github.io/post/post4/</guid>
+      <description>IEEE fue una parte importante de mi vida, fueron varios años donde aprendí muchas cosas, conocí gente muy interesante. Yo comencé siendo un voluntario sin saber que esperar y al principio logro superar las expectativas, con el tiempo eso fue decayendo por razones que expondré más adelante. Aun en día sigo siendo miembro, aunque académicamente o profesionalmente no me aporte mucho, sigo siéndolo más por afecto que por provecho.
+Un poco de history Antes que nada, hay que darle un inicio a esta asociación.</description>
+    </item>
+    
+    <item>
+      <title>Seamos competitivos</title>
+      <link>https://username.github.io/post/post3/</link>
+      <pubDate>Sun, 19 Dec 2021 15:56:13 -0300</pubDate>
+      <author>victorcjuarez@ieee.org (VictorCJuarez)</author>
+      <guid>https://username.github.io/post/post3/</guid>
+      <description>¿Porque todo tiene que ser una competencia? Recién comienzo con este blog, me ilusiona mucho pensar que podre ser constantes con él. Mi personalidad siempre me lleva a querer aprender algo nuevo y dominarlo como herramienta, así que me puse a buscar como escribir un blog. En el primer resultado, uno de sus consejos y entre sus palabras “investiga a la competencia”, esto me hizo saltar una pregunta, ¿porque competimos? Y si uno se pone a pensar la competencia es la forma que por creemos que nos superamos, todos compiten, las empresas compiten, los países compiten.</description>
+    </item>
+    
+    <item>
+      <title>Paper</title>
+      <link>https://username.github.io/post/paper/</link>
+      <pubDate>Tue, 14 Dec 2021 16:36:15 -0300</pubDate>
+      <author>victorcjuarez@ieee.org (VictorCJuarez)</author>
+      <guid>https://username.github.io/post/paper/</guid>
+      <description>Cuando hablamos de una publicación científica, todos creen que es algo que un selecto grupo de personas lo hacen, y esto es bastante errado, actualmente la redacción y publicación de un artículo científico está a la mano de todos.
+The idea Lo complicado siempre es la idea, cuando hablamos de ideas para artículos científicos siempre pensamos que tienen que ser únicas, no es necesaria que sea original, pero sí que sea interesante para uno mismo.</description>
+    </item>
+    
+    <item>
+      <title>Casi el numero uno</title>
+      <link>https://username.github.io/post/post2/</link>
+      <pubDate>Mon, 13 Dec 2021 16:46:35 -0300</pubDate>
+      <author>victorcjuarez@ieee.org (VictorCJuarez)</author>
+      <guid>https://username.github.io/post/post2/</guid>
+      <description>Todos o casi todos conocemos sobre Nikola Tesla, pero quien era Nikola. Nació en 1856 en Smiljan, una aldea serbia del Imperio austríaco (actual Croacia). Hijo de Milutin Tesla, un sacerdote ortodoxo; su madre, de Djuka Mandic, cuyo padre también fue sacerdote ortodoxo, tenía un talento especial para la fabricación de herramientas para el hogar y gran capacidad para memorizar poemas épicos. Sus progenitores eran del oeste de Serbia, cerca de Montenegro.</description>
+    </item>
+    
+  </channel>
+</rss>
