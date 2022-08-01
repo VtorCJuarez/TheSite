@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Analisis on Demand - ||Blog||</title>
+  <meta name="description" content="Hola! un gusto poder compartir mi primer análisis de datos, relacionado a un campo que me apasiona mucho que es el mercado eléctrico, antes que nada me presento soy Victor, y trato de incursionar en esto lo que es el análisis de datos. Ahora si vamos a los que nos interesa.
+Los datos a considerar son proporcionados por CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico S.A.), para simplificar es la empresa estatal encargada de administrar el mercado mayorista eléctrico.">
+  <meta name="author" content="VictorCJuarez"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "||Blog||",
+    
+    "url": "https:\/\/vtorcjuarez.github.io\/TheSite\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/vtorcjuarez.github.io\/TheSite\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/vtorcjuarez.github.io\/TheSite\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/vtorcjuarez.github.io\/TheSite\/post\/analisis-on-demand\/",
+          "name": "Analisis on demand"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "VictorCJuarez"
+  },
+  "headline": "Analisis on Demand",
+  "description" : "Hola! un gusto poder compartir mi primer análisis de datos, relacionado a un campo que me apasiona mucho que es el mercado eléctrico, antes que nada me presento soy Victor, y trato de incursionar en esto lo que es el análisis de datos. Ahora si vamos a los que nos interesa.\nLos datos a considerar son proporcionados por CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico S.A.), para simplificar es la empresa estatal encargada de administrar el mercado mayorista eléctrico.",
+  "inLanguage" : "en",
+  "wordCount":  1173 ,
+  "datePublished" : "2022-08-01T12:10:00",
+  "dateModified" : "2022-08-01T12:10:00",
+  "image" : "https:\/\/vtorcjuarez.github.io\/TheSite\/img\/avatar-icon.png",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/vtorcjuarez.github.io\/TheSite\/post\/analisis-on-demand\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/vtorcjuarez.github.io\/TheSite\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/vtorcjuarez.github.io\/TheSite\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Analisis on Demand" />
+<meta property="og:description" content="Hola! un gusto poder compartir mi primer análisis de datos, relacionado a un campo que me apasiona mucho que es el mercado eléctrico, antes que nada me presento soy Victor, y trato de incursionar en esto lo que es el análisis de datos. Ahora si vamos a los que nos interesa.
+Los datos a considerar son proporcionados por CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico S.A.), para simplificar es la empresa estatal encargada de administrar el mercado mayorista eléctrico.">
+<meta property="og:image" content="https://vtorcjuarez.github.io/TheSite/img/avatar-icon.png" />
+<meta property="og:url" content="https://vtorcjuarez.github.io/TheSite/post/analisis-on-demand/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="||Blog||" />
+
+  <meta name="twitter:title" content="Analisis on Demand" />
+  <meta name="twitter:description" content="Hola! un gusto poder compartir mi primer análisis de datos, relacionado a un campo que me apasiona mucho que es el mercado eléctrico, antes que nada me presento soy Victor, y trato de incursionar en …">
+  <meta name="twitter:image" content="https://vtorcjuarez.github.io/TheSite/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <link href='https://vtorcjuarez.github.io/TheSite/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.96.0" />
+  <link rel="alternate" href="https://vtorcjuarez.github.io/TheSite/index.xml" type="application/rss+xml" title="||Blog||"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://vtorcjuarez.github.io/TheSite/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://vtorcjuarez.github.io/TheSite/css/syntax.css" /><link rel="stylesheet" href="https://vtorcjuarez.github.io/TheSite/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://vtorcjuarez.github.io/TheSite/">||Blog||</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="||Blog||" href="https://vtorcjuarez.github.io/TheSite/">
+            <img class="avatar-img" src="https://vtorcjuarez.github.io/TheSite/img/avatar-icon.png" alt="||Blog||" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Analisis on Demand</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 1, 2022
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1173&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;VictorCJuarez
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Hola! un gusto poder compartir mi primer análisis de datos, relacionado a un campo que me apasiona mucho que es el mercado eléctrico, antes que nada me presento soy Victor, y trato de incursionar en esto lo que es el análisis de datos. Ahora si vamos a los que nos interesa.</p>
+<p>Los datos a considerar son proporcionados por CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico S.A.), para simplificar es la empresa estatal encargada de administrar el mercado mayorista eléctrico.</p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6bcf5f6b-9fc8-499a-8f9a-5743871b9dd7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220801T152459Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=6e5971d988084342a88936621ff29b3a61e5e6afef18f974d949d3fce3265b39&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="CAMMESA"></p>
+<p><a href="http://datos.energia.gob.ar/dataset/publicaciones-cammesa/archivo/30e1c42d-44a7-428f-a55a-12c81dc14186">DATOS</a></p>
+<p>Para simplificarnos la vida a la hora de programar usare <strong><a href="https://jupyter.org/">Jupyter Notebook</a> y Visual Studio Code.</strong></p>
+<p>Todo el código usado estará puesto según vayamos avanzando en el análisis, como primeros pasos se importan las librerías a usar.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span></code></pre></div><p>Como todo análisis debemos ver como se compone el dataset antes proporcionado por CAMMESA, el primer paso es crear nuestra variable data, con esto ya podes empezar a ver la composición.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;demanda-histrica.csv&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Primero veremos como esta compuesto el encabezado y el final de nuestro csv.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</span></span></code></pre></div><p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3aff723f-e192-4774-9210-b5a861ffba6a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220801T152519Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=7bd023ed2a5eb66f959f9cce5509e29aeddcf7ab6c10f917c0fba8f68a3dec3b&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="HEAD"></p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/633dd984-989f-4be8-90a6-cd4d81850f87/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220801T152523Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=3aad13e9b05a31ca4dbc55d3197862707ad3838197bec981f2d4763c8016bc0b&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="TAIL"></p>
+<p>Podemos ver que esta compuesto de varias categorías, las cuales vemos que el año va desde el 2012 al 2020, y también vemos que es un archivo bastante extenso siendo que posee mas de 122 mil filas, ya teniendo una idea a lo que nos enfrentamos sigamos.</p>
+<p>Al ver la estructura de la tabla podemos apreciar, como dijimos antes poseemos una dimensión de (122263, 13), y lo mejor de todo es que no poseemos datos nulos lo que nos facilita aun mas el análisis.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">columns</span>
+</span></span><span class="line"><span class="cl"><span class="n">Index</span><span class="p">([</span><span class="s1">&#39;anio&#39;</span><span class="p">,</span> <span class="s1">&#39;mes&#39;</span><span class="p">,</span> <span class="s1">&#39;agente_nemo&#39;</span><span class="p">,</span> <span class="s1">&#39;agente_descripcion&#39;</span><span class="p">,</span> <span class="s1">&#39;tipo_agente&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="s1">&#39;region&#39;</span><span class="p">,</span> <span class="s1">&#39;provincia&#39;</span><span class="p">,</span> <span class="s1">&#39;categoria_area&#39;</span><span class="p">,</span> <span class="s1">&#39;categoria_demanda&#39;</span><span class="p">,</span> <span class="s1">&#39;tarifa&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="s1">&#39;categoria_tarifa&#39;</span><span class="p">,</span> <span class="s1">&#39;demanda_MWh&#39;</span><span class="p">,</span> <span class="s1">&#39;indice_tiempo&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">      <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">shape</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="mi">122263</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">13</span> <span class="n">columns</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">#   Column              Non-Null Count   Dtype  </span>
+</span></span><span class="line"><span class="cl"><span class="o">---</span>  <span class="o">------</span>              <span class="o">--------------</span>   <span class="o">-----</span>  
+</span></span><span class="line"><span class="cl"> <span class="mi">0</span>   <span class="n">anio</span>                <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="n">int64</span>  
+</span></span><span class="line"><span class="cl"> <span class="mi">1</span>   <span class="n">mes</span>                 <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="n">int64</span>  
+</span></span><span class="line"><span class="cl"> <span class="mi">2</span>   <span class="n">agente_nemo</span>         <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">3</span>   <span class="n">agente_descripcion</span>  <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">4</span>   <span class="n">tipo_agente</span>         <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">5</span>   <span class="n">region</span>              <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">6</span>   <span class="n">provincia</span>           <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">7</span>   <span class="n">categoria_area</span>      <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">8</span>   <span class="n">categoria_demanda</span>   <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">9</span>   <span class="n">tarifa</span>              <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">10</span>  <span class="n">categoria_tarifa</span>    <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">11</span>  <span class="n">demanda_MWh</span>         <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="n">float64</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">12</span>  <span class="n">indice_tiempo</span>       <span class="mi">122263</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>  <span class="nb">object</span> 
+</span></span><span class="line"><span class="cl"><span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="nb">object</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></span></code></pre></div><p>Al analizar los datos numéricos podemos sacar valores interesantes, mas relacionado a las demandas máximas y mínimas.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</span></span></code></pre></div><p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/85b06971-fa71-44f7-b000-5212dde142d1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220801T152620Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=35456dd57da6616fab4763074dd3fa277537d270b5c75bc0fe0687ef732ad6bc&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="DESCRIPCION NUMERICA"></p>
+<p>Separando estos dos datos antes mencionados nos quedarían en los siguientes valores.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="s1">&#39;demanda_MWh&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="mf">1572308.055</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="s1">&#39;demanda_MWh&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span><span class="mf">25377.715</span>
+</span></span></code></pre></div><p>Antes de seguir avanzando con estos valores, estudiaremos las variables no numéricas.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;O&#39;</span><span class="p">])</span>
+</span></span></code></pre></div><p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7c60c881-1c66-4281-9fe0-9e8904e44231/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220801T152647Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=efdccc04d862bb70d96496aea5dba91d8d34eb037e636ae6929242951f80ba10&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="DESCRIPCION NO NUMERICA"></p>
+<p>Podemos ver que las variables que poseen mas frecuencia, se pueden destacar las siguientes, como agente la que mas aparece es la EMP DE ENERGIA DE RIO NEGRO SA, que si googleamos un poco, podemos averiguar que no es mas que EdERSA, es la empresa que suministra el servicio público de distribución, comercialización, generación aislada y transporte de energía eléctrica en todo el territorio de la Provincia de Río Negro, exceptuando San Carlos de Bariloche y el Departamento de Pichi Mahuida. Otra dato es que la tarifa mas usada es el de GUMAS/AUTOGENERADORES, estos son los Grandes Usuarios Mayores. Para no hacerlo extenso el ultimo dato que podemos destacar es que tanto la region como provincia que mas frecuencia posee es Buenos Aires que históricamente la energía siempre se concentro en ese sector del pais.</p>
+<p>Volviendo a los datos numéricos antes guardados, que eran tanto la demanda máxima como mínima, podemos filtrar esos datos y ver en mas detalle en que periodo de tiempo entre otras cosas fue esta demanda.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">condicion</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">demanda_MWh</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mf">1572308.055</span><span class="p">,</span><span class="o">-</span><span class="mf">25377.715</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="n">condicion</span><span class="p">]</span>
+</span></span></code></pre></div><p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1a576977-5015-4f20-b622-a35ae75ed68a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220801T152743Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=918da7c490da303c2d32978b2ab4fb003e1e86a6059e50f38cea8256aab552b0&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="DEMANDA"></p>
+<p>Comenzando por nuestro menor valor de demanda, podemos ver que se produjo en el mes de abril en el 2016, siendo la misma negativa, el agente fue el DPEC Corrientes, que no es mas que la Dirección Provincial de Energía de Corrientes. Analizando la mayor demanda podemos ver que se produjo en julio del 2019 bajo el agente distribuidor de Edenor en la region del Gran Bs. As., una tentativa de idea para explicar esta gran demanda seria que debido a las bajas temperaturas, aumento el uso de elementos calefactores, si relacionamos esta idea con los datos históricos de temperaturas, podemos ver que en ese mes, la media fue entre 15 y 6, siendo este rango menor que en los meses anteriores, otra causa probable es el aumento del precio del gas realizado en abril de ese año, dadas estas dos condiciones podría explicarse el récord de demanda.</p>
+<p>Al analizar tanto las provincias como las regiones, podemos apreciar que Buenos Aires se destaca por mas del 50% de la demanda total y analizando por region posee el 37%.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">provincias_demanda</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;provincia&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="s1">&#39;provincia&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">BUENOS</span> <span class="n">AIRES</span>      <span class="mf">0.557953</span>
+</span></span><span class="line"><span class="cl"><span class="n">CHUBUT</span>            <span class="mf">0.060517</span>
+</span></span><span class="line"><span class="cl"><span class="n">SANTA</span> <span class="n">FE</span>          <span class="mf">0.044347</span>
+</span></span><span class="line"><span class="cl"><span class="n">MENDOZA</span>           <span class="mf">0.041722</span>
+</span></span><span class="line"><span class="cl"><span class="n">ENTRE</span> <span class="n">RIOS</span>        <span class="mf">0.034352</span>
+</span></span><span class="line"><span class="cl"><span class="n">NEUQUEN</span>           <span class="mf">0.028291</span>
+</span></span><span class="line"><span class="cl"><span class="n">RIO</span> <span class="n">NEGRO</span>         <span class="mf">0.024284</span>
+</span></span><span class="line"><span class="cl"><span class="n">SAN</span> <span class="n">JUAN</span>          <span class="mf">0.022820</span>
+</span></span><span class="line"><span class="cl"><span class="n">SANTA</span> <span class="n">CRUZ</span>        <span class="mf">0.021666</span>
+</span></span><span class="line"><span class="cl"><span class="n">CORDOBA</span>           <span class="mf">0.020988</span>
+</span></span><span class="line"><span class="cl"><span class="n">TUCUMAN</span>           <span class="mf">0.018256</span>
+</span></span><span class="line"><span class="cl"><span class="n">SAN</span> <span class="n">LUIS</span>          <span class="mf">0.014551</span>
+</span></span><span class="line"><span class="cl"><span class="n">LA</span> <span class="n">RIOJA</span>          <span class="mf">0.012465</span>
+</span></span><span class="line"><span class="cl"><span class="n">CORRIENTES</span>        <span class="mf">0.012244</span>
+</span></span><span class="line"><span class="cl"><span class="n">FORMOSA</span>           <span class="mf">0.011704</span>
+</span></span><span class="line"><span class="cl"><span class="n">MISIONES</span>          <span class="mf">0.011451</span>
+</span></span><span class="line"><span class="cl"><span class="n">SALTA</span>             <span class="mf">0.011132</span>
+</span></span><span class="line"><span class="cl"><span class="n">JUJUY</span>             <span class="mf">0.010935</span>
+</span></span><span class="line"><span class="cl"><span class="n">SGO</span><span class="o">.</span><span class="n">DEL</span> <span class="n">ESTERO</span>    <span class="mf">0.010829</span>
+</span></span><span class="line"><span class="cl"><span class="n">CATAMARCA</span>         <span class="mf">0.010821</span>
+</span></span><span class="line"><span class="cl"><span class="n">CHACO</span>             <span class="mf">0.010036</span>
+</span></span><span class="line"><span class="cl"><span class="n">LA</span> <span class="n">PAMPA</span>          <span class="mf">0.008637</span>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">provincia</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">region_demanda</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">region_demanda</span>
+</span></span><span class="line"><span class="cl"><span class="n">BUENOS</span> <span class="n">AIRES</span>    <span class="mf">0.375543</span>
+</span></span><span class="line"><span class="cl"><span class="n">GRAN</span> <span class="n">BS</span><span class="o">.</span><span class="n">AS</span><span class="o">.</span>     <span class="mf">0.182107</span>
+</span></span><span class="line"><span class="cl"><span class="n">PATAGONICA</span>      <span class="mf">0.083059</span>
+</span></span><span class="line"><span class="cl"><span class="n">LITORAL</span>         <span class="mf">0.078699</span>
+</span></span><span class="line"><span class="cl"><span class="n">NOROESTE</span>        <span class="mf">0.074438</span>
+</span></span><span class="line"><span class="cl"><span class="n">CUYO</span>            <span class="mf">0.064541</span>
+</span></span><span class="line"><span class="cl"><span class="n">COMAHUE</span>         <span class="mf">0.060640</span>
+</span></span><span class="line"><span class="cl"><span class="n">NORESTE</span>         <span class="mf">0.045435</span>
+</span></span><span class="line"><span class="cl"><span class="n">CENTRO</span>          <span class="mf">0.035538</span>
+</span></span><span class="line"><span class="cl"><span class="n">Name</span><span class="p">:</span> <span class="n">region</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
+</span></span></code></pre></div><p>Estos datos no son de sorprender ya que en esta region se encuentra el aglomerado industrial, si vamos al mapa actual del SADI podemos apreciar la diferencia de potencias instaladas de las distintas regiones.</p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2becf760-1553-4409-b642-a214bf474d2e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220801T152755Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=bc6fea8c2aef8e99bda68f8ece967ed619bcb9594aeb3d68036c58982512136a&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="SADI"></p>
+<p>Analizando las demandas máximas y mínimas de los periodos 2012 al 2020 se pudo llegar al siguiente cuadro, como dato aclaratorio donde no aparece demanda mínima, es que los datos obtenidos son 0 y se repiten en distintos agentes.</p>
+<table>
+<thead>
+<tr>
+<th>Año</th>
+<th>Mes demanda max</th>
+<th>Mes demanda min</th>
+<th>Region demanda max</th>
+<th>Region demanda min</th>
+<th>Provincia demanda max</th>
+<th>Provincia demanda min</th>
+<th>Agente demanda max</th>
+<th>Agente demanda min</th>
+<th>Demanda Max MWh</th>
+<th>Demanda Min MWh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2012</td>
+<td>6</td>
+<td>4</td>
+<td>GRAN BS.AS.</td>
+<td>NOROESTE</td>
+<td>BUENOS AIRES</td>
+<td>SALTA</td>
+<td>EDENOR DISTRIBUIDOR</td>
+<td>EMP.DIST.ENERGIA DE SALTA</td>
+<td>844351.215</td>
+<td>-363.831</td>
+</tr>
+<tr>
+<td>2013</td>
+<td>12</td>
+<td>-</td>
+<td>GRAN BS.AS.</td>
+<td>-</td>
+<td>BUENOS AIRES</td>
+<td>-</td>
+<td>EDENOR DISTRIBUIDOR</td>
+<td>-</td>
+<td>983326.506</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2014</td>
+<td>6</td>
+<td>-</td>
+<td>GRAN BS.AS.</td>
+<td>-</td>
+<td>BUENOS AIRES</td>
+<td>-</td>
+<td>EDENOR DISTRIBUIDOR</td>
+<td>-</td>
+<td>949827.703</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2015</td>
+<td>6</td>
+<td>-</td>
+<td>GRAN BS.AS.</td>
+<td>-</td>
+<td>BUENOS AIRES</td>
+<td>-</td>
+<td>EDENOR DISTRIBUIDOR</td>
+<td>-</td>
+<td>1006740.649</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>6</td>
+<td>4</td>
+<td>GRAN BS.AS.</td>
+<td>NORESTE</td>
+<td>BUENOS AIRES</td>
+<td>CORRIENTES</td>
+<td>EDENOR DISTRIBUIDOR</td>
+<td>DPE CORRIENTES</td>
+<td>1028096.078</td>
+<td>-25377.715</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>7</td>
+<td>2</td>
+<td>GRAN BS.AS.</td>
+<td>CUYO</td>
+<td>BUENOS AIRES</td>
+<td>SAN JUAN</td>
+<td>EDENOR DISTRIBUIDOR</td>
+<td>ENERGIA SAN JUAN SA EX-EDESSA</td>
+<td>780499.483</td>
+<td>-6554.332</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>7</td>
+<td>9</td>
+<td>GRAN BS.AS.</td>
+<td>CENTRO</td>
+<td>BUENOS AIRES</td>
+<td>SAN LUIS</td>
+<td>EDENOR DISTRIBUIDOR</td>
+<td>EDESAL DISTRIBUIDOR</td>
+<td>1046149.598</td>
+<td>-989.002</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>7</td>
+<td>-</td>
+<td>GRAN BS.AS.</td>
+<td>-</td>
+<td>BUENOS AIRES</td>
+<td>-</td>
+<td>EDENOR DISTRIBUIDOR</td>
+<td>-</td>
+<td>1572308.055</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>1</td>
+<td>-</td>
+<td>GRAN BS.AS.</td>
+<td>-</td>
+<td>BUENOS AIRES</td>
+<td>-</td>
+<td>EDENOR DISTRIBUIDOR</td>
+<td>-</td>
+<td>1200124.891</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Con los datos obtenidos, si representaríamos las demandas máximas nos quedaría el siguiente grafico</p>
+<p><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/77f459f8-cb5d-4220-89c6-379e1ffa317e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20220801T152758Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=2ff8a00f6f4c1e2cee8a45e507383d0a7c656f5fc1bf99579bb339a5dec5692c&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22&amp;x-id=GetObject" alt="DEMANDA CURVA"></p>
+<p>Como ultima conclusión podemos observar que si hay un gigante en demanda es Buenos Aires, siendo el que destaco por tener la demanda máxima en todos los años analizados, el otro dato interesante es que con mayor frecuencia aparecen los meses de junio y julio, los cuales son meses de bajas temperaturas, distinta a la idea popular que el mayor consumo siempre es en verano.</p>
+<p>El proyecto podrán encontrarlo en <a href="https://github.com/VtorCJuarez/DataAnalisis">https://github.com/VtorCJuarez/DataAnalisis</a></p>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:victorcjuarez@ieee.org" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/VtorCJuarez" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              VictorCJuarez
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2022
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://vtorcjuarez.github.io/TheSite/">||Blog||</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.96.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://vtorcjuarez.github.io/TheSite/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://vtorcjuarez.github.io/TheSite/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
