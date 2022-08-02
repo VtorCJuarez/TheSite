@@ -3,17 +3,15 @@ title: "Analisis on Demand"
 date: 2022-08-01T12:10:00-03:00
 draft: false
 ---
-Hola! un gusto poder compartir mi primer análisis de datos, relacionado a un campo que me apasiona mucho que es el mercado eléctrico, antes que nada me presento soy Victor, y trato de incursionar en esto lo que es el análisis de datos. Ahora si vamos a los que nos interesa.
-
+¡Hola! un gusto poder compartir mi primer análisis de datos, me presento soy Victor, y trato de incursionar en esto lo que es el manejo de data. Ahora si vamos a los que nos interesa.
 Los datos a considerar son proporcionados por CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico S.A.), para simplificar es la empresa estatal encargada de administrar el mercado mayorista eléctrico.
 
 ![CAMMESA](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6bcf5f6b-9fc8-499a-8f9a-5743871b9dd7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220801T152459Z&X-Amz-Expires=86400&X-Amz-Signature=6e5971d988084342a88936621ff29b3a61e5e6afef18f974d949d3fce3265b39&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 [DATOS](http://datos.energia.gob.ar/dataset/publicaciones-cammesa/archivo/30e1c42d-44a7-428f-a55a-12c81dc14186)
 
-Para simplificarnos la vida a la hora de programar usare **[Jupyter Notebook](https://jupyter.org/) y Visual Studio Code.** 
-
-Todo el código usado estará puesto según vayamos avanzando en el análisis, como primeros pasos se importan las librerías a usar.
+A la hora de programar usare **[Jupyter Notebook](https://jupyter.org/) y Visual Studio Code.** 
+Todo el código usado estará puesto según vayamos avanzando en el análisis.
 
 ```python
 import pandas as pd
@@ -21,13 +19,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-Como todo análisis debemos ver como se compone el dataset antes proporcionado por CAMMESA, el primer paso es crear nuestra variable data, con esto ya podes empezar a ver la composición.
+Como todo análisis debemos ver como se compone lo que vamos a analizar.
 
 ```python
 data = pd.read_csv('demanda-histrica.csv')
 ```
 
-Primero veremos como esta compuesto el encabezado y el final de nuestro csv.
+
 
 ```python
 data.head()
@@ -38,9 +36,8 @@ data.tail()
 
 ![TAIL](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/633dd984-989f-4be8-90a6-cd4d81850f87/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220801T152523Z&X-Amz-Expires=86400&X-Amz-Signature=3aad13e9b05a31ca4dbc55d3197862707ad3838197bec981f2d4763c8016bc0b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
-Podemos ver que esta compuesto de varias categorías, las cuales vemos que el año va desde el 2012 al 2020, y también vemos que es un archivo bastante extenso siendo que posee mas de 122 mil filas, ya teniendo una idea a lo que nos enfrentamos sigamos.
-
-Al ver la estructura de la tabla podemos apreciar, como dijimos antes poseemos una dimensión de (122263, 13), y lo mejor de todo es que no poseemos datos nulos lo que nos facilita aun mas el análisis.
+Podemos ver que está compuesto de varias categorías, el rango de tiempo va desde el 2012 al 2020, y también vemos que es un archivo bastante extenso siendo que posee más de 122 mil filas, ya teniendo una idea a lo que nos enfrentamos sigamos.
+Nos encontramos con una dimensión de (122263, 13), lo mejor de todo es que no poseemos datos nulos lo que nos facilita el análisis.
 
 ```python
 data.columns
@@ -72,7 +69,7 @@ Data columns (total 13 columns):
 dtypes: float64(1), int64(2), object(10)
 ```
 
-Al analizar los datos numéricos podemos sacar valores interesantes, mas relacionado a las demandas máximas y mínimas.
+Al analizar los datos numéricos podemos ver valores interesantes, como las demandas máximas y mínimas.
 
 ```python
 data.describe()
@@ -80,7 +77,7 @@ data.describe()
 
 ![DESCRIPCION NUMERICA](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/85b06971-fa71-44f7-b000-5212dde142d1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220801T152620Z&X-Amz-Expires=86400&X-Amz-Signature=35456dd57da6616fab4763074dd3fa277537d270b5c75bc0fe0687ef732ad6bc&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
-Separando estos dos datos antes mencionados nos quedarían en los siguientes valores.
+
 
 ```python
 data['demanda_MWh'].max()
@@ -90,7 +87,7 @@ data['demanda_MWh'].min()
 -25377.715
 ```
 
-Antes de seguir avanzando con estos valores, estudiaremos las variables no numéricas.
+Antes de seguir avanzando, estudiaremos las variables no numéricas.
 
 ```python
 data.describe(include=['O'])
@@ -98,9 +95,8 @@ data.describe(include=['O'])
 
 ![DESCRIPCION NO NUMERICA](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7c60c881-1c66-4281-9fe0-9e8904e44231/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220801T152647Z&X-Amz-Expires=86400&X-Amz-Signature=efdccc04d862bb70d96496aea5dba91d8d34eb037e636ae6929242951f80ba10&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
-Podemos ver que las variables que poseen mas frecuencia, se pueden destacar las siguientes, como agente la que mas aparece es la EMP DE ENERGIA DE RIO NEGRO SA, que si googleamos un poco, podemos averiguar que no es mas que EdERSA, es la empresa que suministra el servicio público de distribución, comercialización, generación aislada y transporte de energía eléctrica en todo el territorio de la Provincia de Río Negro, exceptuando San Carlos de Bariloche y el Departamento de Pichi Mahuida. Otra dato es que la tarifa mas usada es el de GUMAS/AUTOGENERADORES, estos son los Grandes Usuarios Mayores. Para no hacerlo extenso el ultimo dato que podemos destacar es que tanto la region como provincia que mas frecuencia posee es Buenos Aires que históricamente la energía siempre se concentro en ese sector del pais.
-
-Volviendo a los datos numéricos antes guardados, que eran tanto la demanda máxima como mínima, podemos filtrar esos datos y ver en mas detalle en que periodo de tiempo entre otras cosas fue esta demanda. 
+Las variables que presentan una mayor frecuencia, se pueden destacar las siguientes, como agente con más entradas es ‘EMP DE ENERGIA DE RIO NEGRO SA’, que, si googleamos un poco, podemos averiguar que es EdERSA, la empresa que suministra el servicio público de distribución, comercialización, generación aislada y transporte de energía eléctrica en todo el territorio de la Provincia de Río Negro. Otro dato es que la tarifa más usada es el de GUMAS/AUTOGENERADORES, estos son los Grandes Usuarios Mayores. Tanto la región como la provincia que posee mayor frecuencia es Buenos Aires.
+Volviendo a los datos de demanda máxima y mínima, podemos filtrarlos y ver en más detalle en qué periodo de tiempo se produjeron. 
 
 ```python
 condicion=data.demanda_MWh.isin([1572308.055,-25377.715])
@@ -109,9 +105,8 @@ data[condicion]
 
 ![DEMANDA](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1a576977-5015-4f20-b622-a35ae75ed68a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220801T152743Z&X-Amz-Expires=86400&X-Amz-Signature=918da7c490da303c2d32978b2ab4fb003e1e86a6059e50f38cea8256aab552b0&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
-Comenzando por nuestro menor valor de demanda, podemos ver que se produjo en el mes de abril en el 2016, siendo la misma negativa, el agente fue el DPEC Corrientes, que no es mas que la Dirección Provincial de Energía de Corrientes. Analizando la mayor demanda podemos ver que se produjo en julio del 2019 bajo el agente distribuidor de Edenor en la region del Gran Bs. As., una tentativa de idea para explicar esta gran demanda seria que debido a las bajas temperaturas, aumento el uso de elementos calefactores, si relacionamos esta idea con los datos históricos de temperaturas, podemos ver que en ese mes, la media fue entre 15 y 6, siendo este rango menor que en los meses anteriores, otra causa probable es el aumento del precio del gas realizado en abril de ese año, dadas estas dos condiciones podría explicarse el récord de demanda. 
-
-Al analizar tanto las provincias como las regiones, podemos apreciar que Buenos Aires se destaca por mas del 50% de la demanda total y analizando por region posee el 37%. 
+Luego de haber filtrado, podemos ver que la demanda mínima, se produjo en el mes de abril del 2016, el agente fue el DPEC Corrientes (Dirección Provincial de Energía de Corrientes). La mayor demanda se produjo en julio del 2019 bajo el agente distribuidor de Edenor en la región del Gran Bs. As., una tentativa de idea para explicar esta gran demanda seria que debido a las bajas temperaturas, esta produjo un aumento el uso de elementos calefactores, si relacionamos esta idea con los datos históricos de temperaturas, podemos ver que en ese mes, la media fue entre 15 y 6 grados, siendo este rango menor que en los meses anteriores, otra causa probable es el aumento del precio del gas realizado en abril de ese año. 
+Al analizar tanto las provincias como las regiones, podemos apreciar que Buenos Aires se destaca por poseer más del 50% de la demanda total y la región posee el 37%.
 
 ```python
 provincias_demanda=data['provincia'].value_counts(normalize=True)
@@ -155,11 +150,11 @@ CENTRO          0.035538
 Name: region, dtype: float64
 ```
 
-Estos datos no son de sorprender ya que en esta region se encuentra el aglomerado industrial, si vamos al mapa actual del SADI podemos apreciar la diferencia de potencias instaladas de las distintas regiones. 
+Estos datos no son de sorprender ya que en esta región se encuentra un gran porcentaje de la industria. Si vamos al mapa actual del SADI podemos apreciar la diferencia de potencias instaladas de las distintas regiones, donde destaca la región Buenos Aires.  
 
 ![SADI](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2becf760-1553-4409-b642-a214bf474d2e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220801T152755Z&X-Amz-Expires=86400&X-Amz-Signature=bc6fea8c2aef8e99bda68f8ece967ed619bcb9594aeb3d68036c58982512136a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
-Analizando las demandas máximas y mínimas de los periodos 2012 al 2020 se pudo llegar al siguiente cuadro, como dato aclaratorio donde no aparece demanda mínima, es que los datos obtenidos son 0 y se repiten en distintos agentes. 
+Analizando las demandas máximas y mínimas de los periodos 2012 al 2020 se pudo llegar al siguiente cuadro. Como dato aclaratorio donde no aparece el valor de demanda mínima, es que los datos obtenidos son 0 y se repiten en distintos agentes. 
 
 | Año | Mes demanda max | Mes demanda min | Region demanda max | Region demanda min | Provincia demanda max | Provincia demanda min | Agente demanda max | Agente demanda min | Demanda Max MWh | Demanda Min MWh |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -177,6 +172,5 @@ Con los datos obtenidos, si representaríamos las demandas máximas nos quedarí
 
 ![DEMANDA CURVA](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/77f459f8-cb5d-4220-89c6-379e1ffa317e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220801T152758Z&X-Amz-Expires=86400&X-Amz-Signature=2ff8a00f6f4c1e2cee8a45e507383d0a7c656f5fc1bf99579bb339a5dec5692c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
-Como ultima conclusión podemos observar que si hay un gigante en demanda es Buenos Aires, siendo el que destaco por tener la demanda máxima en todos los años analizados, el otro dato interesante es que con mayor frecuencia aparecen los meses de junio y julio, los cuales son meses de bajas temperaturas, distinta a la idea popular que el mayor consumo siempre es en verano.
-
-El proyecto podrán encontrarlo en https://github.com/VtorCJuarez/DataAnalisis
+Como ultima conclusión podemos observar que si hay un gigante en demanda es Buenos Aires, siendo el que destaca todos los años analizados, el otro dato interesante es que con mayor frecuencia aparecen los meses de junio y julio como meses de gran demanda, los cuales son meses de bajas temperaturas, que la idea popular es pensar que el mayor consumo siempre es en verano. 
+Este y otros análisis podrán encontrarlo en https://github.com/VtorCJuarez/DataAnalisis

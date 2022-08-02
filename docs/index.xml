@@ -14,8 +14,9 @@
       <pubDate>Mon, 01 Aug 2022 12:10:00 -0300</pubDate>
       <author>victorcjuarez@ieee.org (VictorCJuarez)</author>
       <guid>https://vtorcjuarez.github.io/TheSite/post/analisis-on-demand/</guid>
-      <description>Hola! un gusto poder compartir mi primer análisis de datos, relacionado a un campo que me apasiona mucho que es el mercado eléctrico, antes que nada me presento soy Victor, y trato de incursionar en esto lo que es el análisis de datos. Ahora si vamos a los que nos interesa.
-Los datos a considerar son proporcionados por CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico S.A.), para simplificar es la empresa estatal encargada de administrar el mercado mayorista eléctrico.</description>
+      <description>¡Hola! un gusto poder compartir mi primer análisis de datos, me presento soy Victor, y trato de incursionar en esto lo que es el manejo de data. Ahora si vamos a los que nos interesa. Los datos a considerar son proporcionados por CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico S.A.), para simplificar es la empresa estatal encargada de administrar el mercado mayorista eléctrico.
+DATOS
+A la hora de programar usare Jupyter Notebook y Visual Studio Code.</description>
     </item>
     
   </channel>
