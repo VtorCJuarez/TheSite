@@ -168,7 +168,7 @@ Analizando las demandas máximas y mínimas de los periodos 2012 al 2020 se pudo
 | 2019 | 7 | - | GRAN BS.AS. | - | BUENOS AIRES | - | EDENOR DISTRIBUIDOR | - | 1572308.055 | - |
 | 2020 | 1 | - | GRAN BS.AS. | - | BUENOS AIRES | - | EDENOR DISTRIBUIDOR | - | 1200124.891 | - |
 
-Con los datos obtenidos, si representaríamos las demandas máximas nos quedaría el siguiente grafico
+Con los datos obtenidos, si representaríamos las demandas máximas respecto al tiempo
 
 ![DEMANDA CURVA](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/77f459f8-cb5d-4220-89c6-379e1ffa317e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220801%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220801T152758Z&X-Amz-Expires=86400&X-Amz-Signature=2ff8a00f6f4c1e2cee8a45e507383d0a7c656f5fc1bf99579bb339a5dec5692c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
