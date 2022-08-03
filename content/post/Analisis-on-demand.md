@@ -6,7 +6,7 @@ draft: false
 ¡Hola! un gusto poder compartir mi primer análisis de datos, me presento soy Victor, y trato de incursionar en esto lo que es el manejo de data. Ahora si vamos a los que nos interesa.
 Los datos a considerar son proporcionados por CAMMESA (Compañía Administradora del Mercado Mayorista Eléctrico S.A.), para simplificar es la empresa estatal encargada de administrar el mercado mayorista eléctrico.
 
-![CAMMESA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/CAMESA.png)
+![CAMMESA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/CAMESA.png?raw=true)
 
 [DATOS](http://datos.energia.gob.ar/dataset/publicaciones-cammesa/archivo/30e1c42d-44a7-428f-a55a-12c81dc14186)
 
@@ -32,9 +32,9 @@ data.head()
 data.tail()
 ```
 
-![HEAD](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/HEAD.png)
+![HEAD](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/HEAD.png?raw=true)
 
-![TAIL](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/TAIL.png)
+![TAIL](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/TAIL.png?raw=true)
 
 Podemos ver que está compuesto de varias categorías, el rango de tiempo va desde el 2012 al 2020, y también vemos que es un archivo bastante extenso siendo que posee más de 122 mil filas, ya teniendo una idea a lo que nos enfrentamos sigamos.
 Nos encontramos con una dimensión de (122263, 13), lo mejor de todo es que no poseemos datos nulos lo que nos facilita el análisis.
@@ -75,7 +75,7 @@ Al analizar los datos numéricos podemos ver valores interesantes, como las dema
 data.describe()
 ```
 
-![DESCRIPCION NUMERICA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/DESCRIBE.png)
+![DESCRIPCION NUMERICA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/DESCRIBE.png?raw=true)
 
 
 
@@ -93,7 +93,7 @@ Antes de seguir avanzando, estudiaremos las variables no numéricas.
 data.describe(include=['O'])
 ```
 
-![DESCRIPCION NO NUMERICA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/NONUM.png)
+![DESCRIPCION NO NUMERICA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/NONUM.png?raw=true)
 
 Las variables que presentan una mayor frecuencia, se pueden destacar las siguientes, como agente con más entradas es ‘EMP DE ENERGIA DE RIO NEGRO SA’, que, si googleamos un poco, podemos averiguar que es EdERSA, la empresa que suministra el servicio público de distribución, comercialización, generación aislada y transporte de energía eléctrica en todo el territorio de la Provincia de Río Negro. Otro dato es que la tarifa más usada es el de GUMAS/AUTOGENERADORES, estos son los Grandes Usuarios Mayores. Tanto la región como la provincia que posee mayor frecuencia es Buenos Aires.
 Volviendo a los datos de demanda máxima y mínima, podemos filtrarlos y ver en más detalle en qué periodo de tiempo se produjeron. 
@@ -103,7 +103,7 @@ condicion=data.demanda_MWh.isin([1572308.055,-25377.715])
 data[condicion]
 ```
 
-![DEMANDA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/DEMANDA.png)
+![DEMANDA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/DEMANDA.png?raw=true)
 
 Luego de haber filtrado, podemos ver que la demanda mínima, se produjo en el mes de abril del 2016, el agente fue el DPEC Corrientes (Dirección Provincial de Energía de Corrientes). La mayor demanda se produjo en julio del 2019 bajo el agente distribuidor de Edenor en la región del Gran Bs. As., una tentativa de idea para explicar esta gran demanda seria que debido a las bajas temperaturas, esta produjo un aumento el uso de elementos calefactores, si relacionamos esta idea con los datos históricos de temperaturas, podemos ver que en ese mes, la media fue entre 15 y 6 grados, siendo este rango menor que en los meses anteriores, otra causa probable es el aumento del precio del gas realizado en abril de ese año. 
 Al analizar tanto las provincias como las regiones, podemos apreciar que Buenos Aires se destaca por poseer más del 50% de la demanda total y la región posee el 37%.
@@ -152,7 +152,7 @@ Name: region, dtype: float64
 
 Estos datos no son de sorprender ya que en esta región se encuentra un gran porcentaje de la industria. Si vamos al mapa actual del SADI podemos apreciar la diferencia de potencias instaladas de las distintas regiones, donde destaca la región Buenos Aires.  
 
-![SADI](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/SADI.png)
+![SADI](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/SADI.png?raw=true)
 
 Analizando las demandas máximas y mínimas de los periodos 2012 al 2020 se pudo llegar al siguiente cuadro. Como dato aclaratorio donde no aparece el valor de demanda mínima, es que los datos obtenidos son 0 y se repiten en distintos agentes. 
 
@@ -170,7 +170,7 @@ Analizando las demandas máximas y mínimas de los periodos 2012 al 2020 se pudo
 
 Con los datos obtenidos, si representaríamos las demandas máximas respecto al tiempo
 
-![DEMANDA CURVA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/CURVA.png)
+![DEMANDA CURVA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/CURVA.png?raw=true)
 
 Como ultima conclusión podemos observar que si hay un gigante en demanda es Buenos Aires, siendo el que destaca todos los años analizados, el otro dato interesante es que con mayor frecuencia aparecen los meses de junio y julio como meses de gran demanda, los cuales son meses de bajas temperaturas, que la idea popular es pensar que el mayor consumo siempre es en verano. 
 Este y otros análisis podrán encontrarlo en https://github.com/VtorCJuarez/DataAnalisis
