@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>victorcjuarez@ieee.org (VictorCJuarez)</managingEditor>
     <webMaster>victorcjuarez@ieee.org (VictorCJuarez)</webMaster>
-    <lastBuildDate>Mon, 01 Aug 2022 12:10:00 -0300</lastBuildDate><atom:link href="https://vtorcjuarez.github.io/TheSite/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Aug 2022 12:55:17 -0300</lastBuildDate><atom:link href="https://vtorcjuarez.github.io/TheSite/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pokémon, ¡Yo te elijo!</title>
+      <link>https://vtorcjuarez.github.io/TheSite/post/pokemon-data/</link>
+      <pubDate>Thu, 11 Aug 2022 12:55:17 -0300</pubDate>
+      <author>victorcjuarez@ieee.org (VictorCJuarez)</author>
+      <guid>https://vtorcjuarez.github.io/TheSite/post/pokemon-data/</guid>
+      <description>Cuando hablamos de un análisis de datos, podemos pensar que deben ser temas serios, pero para adquirir practica en el campo no es necesario que todos los temas deban ser de una índole económica o científica, pero si tratados con la seriedad que ello confiere. Como lo anuncia el titulo, trataremos con un dataset muy interesante relacionado al mundo Pokémon, el anime que todos conocemos.</description>
+    </item>
+    
     <item>
       <title>Analisis on Demand</title>
       <link>https://vtorcjuarez.github.io/TheSite/post/analisis-on-demand/</link>
