@@ -44,7 +44,7 @@ Dado el dataframe **df** podemos ver que tendremos que manipularlo y limpiarlo u
 
 Realizados los cambios podemos verificar y visualizar como se vera la tabla a analizar. 
 
-![head.PNG](Poke%CC%81mon,%20%C2%A1Yo%20te%20elijo!%20027f82aaa73e4226b3c01ecb19e80416/head.png)
+![head.PNG](https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/headbien.PNG?raw=true)
 
 ```python
 df.info()
@@ -93,7 +93,7 @@ Hablando de legendarios, los mismos poseen mucho poder, pero la pregunta es cual
 
 ![https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/MASPODER.PNG](https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/MASPODER.PNG)
 
-![eternamax.jpg](Poke%CC%81mon,%20%C2%A1Yo%20te%20elijo!%20027f82aaa73e4226b3c01ecb19e80416/eternamax.jpg)
+![eternamax.jpg](https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/eternamax.jpg?raw=true)
 
 Con una diferencia significativa nos encontramos con **Eternatus** un Pokémon legendario del tipo dragón/veneno, introducido en la octava temporada.
 
@@ -109,7 +109,7 @@ Si pasamos este análisis a cada tipo de Pokémon nos encontramos con lo siguien
 
 Aquí si podemos encontrarnos con una resaltada diferencia, y es que los Pokémon tipo dragón su mediana se encuentra por encima del resto de tipos. 
 
-![16140823976294.jpg](Poke%CC%81mon,%20%C2%A1Yo%20te%20elijo!%20027f82aaa73e4226b3c01ecb19e80416/16140823976294.jpg)
+![16140823976294.jpg](https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/primeropoke.jpg?raw=true)
 
 Sigamos comparando datos, y esta vez lo haremos con los tipos que todos conocemos, estos son fuego, agua y planta. Para ellos usaremos los datos medios de estos tres tipos y los visualizaremos en un grafico polar. 
 
