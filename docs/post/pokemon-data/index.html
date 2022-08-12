@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>Pokémon, ¡Yo te elijo! - ||Blog||</title>
-  <meta name="description" content="Cuando hablamos de un análisis de datos, podemos pensar que deben ser temas serios, pero para adquirir practica en el campo no es necesario que todos los temas deban ser de una índole económica o científica, pero si tratados con la seriedad que ello confiere. Como lo anuncia el titulo, trataremos con un dataset muy interesante relacionado al mundo Pokémon, el anime que todos conocemos.">
+  <meta name="description" content="Cuando hablamos de un análisis de datos, podemos pensar que deben ser temas serios, pero para adquirir practica en el campo no es necesario que todos los temas deban ser de una índole económica o científica, pero si tratados con la seriedad que ello confiere. Como lo anuncia el titulo, trataremos con un dataset muy interesante relacionado al mundo Pokémon, el anime que todos conocemos.
+A diferencia del anterior análisis, este será mucho mas visual, todo el código lo podrán encontrar en su correspondiente GitHub.">
   <meta name="author" content="VictorCJuarez"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +58,9 @@
     "name" : "VictorCJuarez"
   },
   "headline": "Pokémon, ¡Yo te elijo!",
-  "description" : "Cuando hablamos de un análisis de datos, podemos pensar que deben ser temas serios, pero para adquirir practica en el campo no es necesario que todos los temas deban ser de una índole económica o científica, pero si tratados con la seriedad que ello confiere. Como lo anuncia el titulo, trataremos con un dataset muy interesante relacionado al mundo Pokémon, el anime que todos conocemos.",
+  "description" : "Cuando hablamos de un análisis de datos, podemos pensar que deben ser temas serios, pero para adquirir practica en el campo no es necesario que todos los temas deban ser de una índole económica o científica, pero si tratados con la seriedad que ello confiere. Como lo anuncia el titulo, trataremos con un dataset muy interesante relacionado al mundo Pokémon, el anime que todos conocemos.\nA diferencia del anterior análisis, este será mucho mas visual, todo el código lo podrán encontrar en su correspondiente GitHub.",
   "inLanguage" : "en",
-  "wordCount":  65 ,
+  "wordCount":  1197 ,
   "datePublished" : "2022-08-11T12:55:17",
   "dateModified" : "2022-08-11T12:55:17",
   "image" : "https:\/\/vtorcjuarez.github.io\/TheSite\/img\/avatar-icon.png",
@@ -79,7 +80,8 @@
 </script>
 
 <meta property="og:title" content="Pokémon, ¡Yo te elijo!" />
-<meta property="og:description" content="Cuando hablamos de un análisis de datos, podemos pensar que deben ser temas serios, pero para adquirir practica en el campo no es necesario que todos los temas deban ser de una índole económica o científica, pero si tratados con la seriedad que ello confiere. Como lo anuncia el titulo, trataremos con un dataset muy interesante relacionado al mundo Pokémon, el anime que todos conocemos.">
+<meta property="og:description" content="Cuando hablamos de un análisis de datos, podemos pensar que deben ser temas serios, pero para adquirir practica en el campo no es necesario que todos los temas deban ser de una índole económica o científica, pero si tratados con la seriedad que ello confiere. Como lo anuncia el titulo, trataremos con un dataset muy interesante relacionado al mundo Pokémon, el anime que todos conocemos.
+A diferencia del anterior análisis, este será mucho mas visual, todo el código lo podrán encontrar en su correspondiente GitHub.">
 <meta property="og:image" content="https://vtorcjuarez.github.io/TheSite/img/avatar-icon.png" />
 <meta property="og:url" content="https://vtorcjuarez.github.io/TheSite/post/pokemon-data/" />
 <meta property="og:type" content="website" />
@@ -218,7 +220,7 @@
   
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;65&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1197&nbsp;words
   
   
     
@@ -244,6 +246,93 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>Cuando hablamos de un análisis de datos, podemos pensar que deben ser temas serios, pero para adquirir practica en el campo no es necesario que todos los temas deban ser de una índole económica o científica, pero si tratados con la seriedad que ello confiere. Como lo anuncia el titulo, trataremos con un dataset muy interesante relacionado al mundo Pokémon, el anime que todos conocemos.</p>
+<p><img src="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/International_Pok%C3%A9mon_logo.svg.png" alt="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/International_Pok%C3%A9mon_logo.svg.png"></p>
+<p>A diferencia del anterior análisis, este será mucho mas visual, todo el código lo podrán encontrar en su correspondiente <a href="https://github.com/VtorCJuarez/Datanalyst/tree/main/Pokemon%20data">GitHub</a>.</p>
+<p>Para ser un poco mas ordenados separaremos este estudio en tres etapas, ahora si, vamos por la primera etapa.</p>
+<h2 id="limpieza-y-manipulación-de-datos">Limpieza y manipulación de datos</h2>
+<p>Como desconocemos nuestro dataset, procederemos a ver como se compone.</p>
+<p><img src="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/HEAD.PNG" alt="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/HEAD.PNG"></p>
+<p>Vemos que posee mas columnas que las que podemos visualizar, separaremos en dos los datos.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;defense&#39;</span><span class="p">,</span> <span class="s1">&#39;sp_attack&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="s1">&#39;sp_defense&#39;</span><span class="p">,</span> <span class="s1">&#39;speed&#39;</span><span class="p">,</span> <span class="s1">&#39;catch_rate&#39;</span><span class="p">,</span> <span class="s1">&#39;percentage_male&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="s1">&#39;against_normal&#39;</span><span class="p">,</span> <span class="s1">&#39;against_fire&#39;</span><span class="p">,</span> <span class="s1">&#39;against_water&#39;</span><span class="p">,</span> <span class="s1">&#39;against_electric&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="s1">&#39;against_grass&#39;</span><span class="p">,</span> <span class="s1">&#39;against_ice&#39;</span><span class="p">,</span> <span class="s1">&#39;against_fight&#39;</span><span class="p">,</span> <span class="s1">&#39;against_poison&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><p><img src="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/RESTO.PNG" alt="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/RESTO.PNG"></p>
+<p>Y crearemos un dataframe que llamaremos <strong>weakness</strong>, que usaremos luego para realizar un estudio relacionado a los fuertes de cada tipo.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">weakness</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;against_normal&#39;</span><span class="p">,</span> <span class="s1">&#39;against_fire&#39;</span><span class="p">,</span> <span class="s1">&#39;against_water&#39;</span><span class="p">,</span> <span class="s1">&#39;against_electric&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="s1">&#39;against_grass&#39;</span><span class="p">,</span> <span class="s1">&#39;against_ice&#39;</span><span class="p">,</span> <span class="s1">&#39;against_fight&#39;</span><span class="p">,</span> <span class="s1">&#39;against_poison&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="s1">&#39;against_ground&#39;</span><span class="p">,</span> <span class="s1">&#39;against_flying&#39;</span><span class="p">,</span> <span class="s1">&#39;against_psychic&#39;</span><span class="p">,</span> <span class="s1">&#39;against_bug&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="s1">&#39;against_rock&#39;</span><span class="p">,</span> <span class="s1">&#39;against_ghost&#39;</span><span class="p">,</span> <span class="s1">&#39;against_dragon&#39;</span><span class="p">,</span> <span class="s1">&#39;against_dark&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="s1">&#39;against_steel&#39;</span><span class="p">,</span> <span class="s1">&#39;against_fairy&#39;</span><span class="p">]]</span>
+</span></span></code></pre></div><p>Dado el dataframe <strong>df</strong> podemos ver que tendremos que manipularlo y limpiarlo un poco, así nos sea mas sencillo poder trabajar con el, vemos que la columna <strong>type_1</strong> esta todo en mayus, procederemos a pasar todo a minúsculas, pasaremos <strong>weight_pounds</strong> a kilogramos, <strong>percentage_male</strong> lo transformaremos a float, y vemos que los nombres de los Pokémons poseen un problema los que llevan Mega en su nombre, además trataremos todos los Nan (valores vacíos) para su eliminación o cambios por otro valor y por ultimo verificaremos nuestra información.</p>
+<p><img src="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/TABLA1.PNG" alt="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/TABLA1.PNG"></p>
+<p>Realizados los cambios podemos verificar y visualizar como se vera la tabla a analizar.</p>
+<p><img src="Poke%CC%81mon,%20%C2%A1Yo%20te%20elijo!%20027f82aaa73e4226b3c01ecb19e80416/head.png" alt="head.PNG"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Output</span> <span class="n">exceeds</span> <span class="n">the</span> <span class="n">size</span> <span class="n">limit</span><span class="o">.</span> <span class="n">Open</span> <span class="n">the</span> <span class="n">full</span> <span class="n">output</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">text</span> <span class="n">editor</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">pandas</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">DataFrame</span><span class="s1">&#39;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Int64Index</span><span class="p">:</span> <span class="mi">1045</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="n">to</span> <span class="mi">1044</span>
+</span></span><span class="line"><span class="cl"><span class="n">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">16</span> <span class="n">columns</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">#   Column           Non-Null Count  Dtype  </span>
+</span></span><span class="line"><span class="cl"><span class="o">---</span>  <span class="o">------</span>           <span class="o">--------------</span>  <span class="o">-----</span>  
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">14</span>  <span class="n">percentage_male</span>  <span class="mi">1045</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>   <span class="n">float64</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">15</span>  <span class="n">weight_kg</span>        <span class="mi">1045</span> <span class="n">non</span><span class="o">-</span><span class="n">null</span>   <span class="n">float64</span>
+</span></span><span class="line"><span class="cl"><span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span> <span class="nb">object</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">memory</span> <span class="n">usage</span><span class="p">:</span> <span class="mf">138.8</span><span class="o">+</span> <span class="n">KB</span>
+</span></span></code></pre></div><p>Verificada nuestra información podemos pasar a lo realmente interesante.</p>
+<h2 id="eda">EDA</h2>
+<p>Una de las primeras preguntas que me realice es cuantos de cada tipo hay. Y esto es muy sencillo gracias a contar los valores que tenemos en la columna de tipos.</p>
+<p><img src="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/PLOT1.png" alt="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/PLOT1.png"></p>
+<p>Interesante ver que los Pokémons que mas predominan son los del tipo agua, pero hay un dato adicional que puede cambiarnos este análisis, y es que pueden tener un segundo tipo.</p>
+<p>Para hacerlo mas interesante comparemos todos los tipos y veremos cual combinación es la que predomina.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/TABLA2.PNG?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/TABLA2.PNG?raw=true"></p>
+<p>Para visualizar mejor usaremos un mapa de calor para ver como se compone nuestra tabla.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/MAPACALOR1.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/MAPACALOR1.png?raw=true"></p>
+<p>Ahora si podemos afirmar que el tipo con mas cantidad es el tipo agua, seguido del tipo normal, todos ellos sin un segundo tipo, pero si incluimos que posean un segundo tipo, el que mas posee son los normales tipo volador.
+Si alguna vez vieron la serie, sabrán que existen distintas generaciones, y en todas ellas incluyen distintos tipos, pero lo que mas me interesa saber es cuantos legendarios fueron apareciendo por generación.</p>
+<p><img src="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/BARRAS1.png" alt="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/BARRAS1.png"></p>
+<p>Podemos ver que según avanzaron las generaciones la inclusión de nuevos tipos, se vio acrecentando en parte. Siendo la séptima generación donde mas Pokémons tipo sub legendario se incluyeron. Y la octava donde mas legendarios aparecieron.</p>
+<p>Hablando de legendarios, los mismos poseen mucho poder, pero la pregunta es cual es el Pokémon mas poderoso?, siendo que existen distintos tipos de stats, para ello procederemos a realizar una suma de los mismos y comparar para encontrar a los 5 mas fuertes.</p>
+<p><img src="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/MASPODER.PNG" alt="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/MASPODER.PNG"></p>
+<p><img src="Poke%CC%81mon,%20%C2%A1Yo%20te%20elijo!%20027f82aaa73e4226b3c01ecb19e80416/eternamax.jpg" alt="eternamax.jpg"></p>
+<p>Con una diferencia significativa nos encontramos con <strong>Eternatus</strong> un Pokémon legendario del tipo dragón/veneno, introducido en la octava temporada.</p>
+<p>Si generalizamos un poco podemos ver la diferencia de poder entre las distintas generaciones en el siguiente boxplot o diagrama de caja.</p>
+<p><img src="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/MEDIAPORGENRATION.png" alt="https://raw.githubusercontent.com/VtorCJuarez/TheSite/main/static/img_pokemon/MEDIAPORGENRATION.png"></p>
+<p>Podemos ver que la mediana de los datos se encuentran casi todas las generaciones parejas, y en la octava generación hay un dato que se sale del resto que no es mas que el Pokémon antes mencionado.</p>
+<p>Si pasamos este análisis a cada tipo de Pokémon nos encontramos con lo siguiente.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/MEDIAPORTIPO.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/MEDIAPORTIPO.png?raw=true"></p>
+<p>Aquí si podemos encontrarnos con una resaltada diferencia, y es que los Pokémon tipo dragón su mediana se encuentra por encima del resto de tipos.</p>
+<p><img src="Poke%CC%81mon,%20%C2%A1Yo%20te%20elijo!%20027f82aaa73e4226b3c01ecb19e80416/16140823976294.jpg" alt="16140823976294.jpg"></p>
+<p>Sigamos comparando datos, y esta vez lo haremos con los tipos que todos conocemos, estos son fuego, agua y planta. Para ellos usaremos los datos medios de estos tres tipos y los visualizaremos en un grafico polar.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/PLOT2.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/PLOT2.png?raw=true"></p>
+<p>Como lo supimos, el mejor siempre fue <strong>Charmander</strong>, los datos nos dan la razón.</p>
+<p>Dejando de lado los stats, vayamos a otras características como son el peso y la altura. Donde teniendo estos datos podríamos sacar un BMI y ver cuales son los Pokémons que mas índice de masa poseen y cuales menos.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/INDICES.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/INDICES.png?raw=true"></p>
+<p>Lo sorprendente es la altura máxima con la que nos encontramos, que es de 100 metros, y otro dato es que <strong>Cosmog</strong> que es uno de los mas livianos, al evolucionar en <strong>Cosmoem</strong> se convierte en el Pokémon mas denso.</p>
+<p>Si hablamos de sexos el mundo Pokémon no queda atrás y es que si visualizamos la proporción de machos y hembras llegamos a este grafico de torta.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/PLOT3.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/PLOT3.png?raw=true"></p>
+<p>Dejando de lado los géneros, y volviendo a un dato que es importante en el mundo Pokémon, que es tanto el ataque como la defensa, podemos visualizar esta vez el total de datos de cada Pokémon existente y trazar una recta para separa de los que tienen mas ataque que defensa y viceversa.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/PLOT4.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/PLOT4.png?raw=true"></p>
+<p>Dados todos estos puntos podemos denotar los siguientes tres, mayor defensa, mayor ataque, y algo que no vimos hasta el momento, el Pokémon mas débil.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/mas_defensa.PNG?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/mas_defensa.PNG?raw=true"></p>
+<p>Si vemos a nuestro Pokémon con mas defensa podemos ver que es el que anteriormente habíamos nombrado como el mas poderoso, <strong>Eternatus Eternamax.</strong></p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/mas_ataque.PNG?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/mas_ataque.PNG?raw=true"></p>
+<p>Si vemos a nuestro Pokémon con mas ataque, es uno de los mas conocidos pero en su versión Mega.  <strong>Mewtwo</strong> es un Pokémon legendario y artificial de tipo psíquico introducido en la primera generación que a partir de la sexta generación puede megaevolucionar en <strong>Mega Mewtwo X.</strong></p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/mas_debil.PNG?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/mas_debil.PNG?raw=true"></p>
+<p>Y nuestro Pokémon con el ataque y defensa mas bajo nos encontramos con <strong>Happiny</strong>, un Pokémon bebé de tipo normal introducido en la cuarta generación.</p>
+<h2 id="weakness"><strong>Weakness</strong></h2>
+<p>Como ultimo análisis usaremos nuestro dataframe antes generado y separado de nuestros datos principal. Y procederemos a analizar, que tipo es mejor contra que tipo de Pokémon. Si procedemos igual que en la tabla que generemos con los distintos tipos.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/TABLAweak.PNG?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/TABLAweak.PNG?raw=true"></p>
+<p>Y a esto mismo lo pasamos a una visualización que podamos entender mejor.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/mapa_calor2.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/mapa_calor2.png?raw=true"></p>
+<p>En primera instancia podemos denotar que un valor esta fuera de lo normal, así que veamos cual es el problema. Vayamos a ver cual son los valores máximos en la columna de <em><strong>ice</strong></em> que es donde encontramos nuestro problema.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/ice_error.PNG?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/ice_error.PNG?raw=true"></p>
+<p>Sabiendo cual es nuestro problema, podemos corregirlo y así obtener los datos que estamos buscando. Obteniendo el siguiente mapa de calor.</p>
+<p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/Mpa_calor3.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/img_pokemon/Mpa_calor3.png?raw=true"></p>
+<p>Ahora sabiendo que tipos nos sirve para luchar contra que tipo, podemos dar por finalizado este análisis.
+Como siempre fue un gusto poder compartirles todo este trabajo que llevo su tiempo, hasta el siguiente análisis.</p>
 
 
         
