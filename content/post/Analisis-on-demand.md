@@ -173,4 +173,4 @@ Con los datos obtenidos, si representaríamos las demandas máximas respecto al 
 ![DEMANDA CURVA](https://github.com/VtorCJuarez/TheSite/blob/main/static/An%C3%A1lisis%20On%20Demand/CURVA.png?raw=true)
 
 Como ultima conclusión podemos observar que si hay un gigante en demanda es Buenos Aires, siendo el que destaca todos los años analizados, el otro dato interesante es que con mayor frecuencia aparecen los meses de junio y julio como meses de gran demanda, los cuales son meses de bajas temperaturas, que la idea popular es pensar que el mayor consumo siempre es en verano. 
-Este y otros análisis podrán encontrarlo en https://github.com/VtorCJuarez/DataAnalisis
+Este y otros análisis podrán encontrarlo en [LINK](https://github.com/VtorCJuarez/Datanalyst)
