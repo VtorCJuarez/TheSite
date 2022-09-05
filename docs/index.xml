@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>victorcjuarez@ieee.org (VictorCJuarez)</managingEditor>
     <webMaster>victorcjuarez@ieee.org (VictorCJuarez)</webMaster>
-    <lastBuildDate>Mon, 22 Aug 2022 13:21:17 -0300</lastBuildDate><atom:link href="https://vtorcjuarez.github.io/TheSite/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Sep 2022 17:41:16 -0300</lastBuildDate><atom:link href="https://vtorcjuarez.github.io/TheSite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fifa_the_Game</title>
+      <link>https://vtorcjuarez.github.io/TheSite/post/fifa_the_game/</link>
+      <pubDate>Sun, 04 Sep 2022 17:41:16 -0300</pubDate>
+      <author>victorcjuarez@ieee.org (VictorCJuarez)</author>
+      <guid>https://vtorcjuarez.github.io/TheSite/post/fifa_the_game/</guid>
+      <description>Cuando hablamos de videojuegos, el gran publico tiene una gran afición por los juegos de futbol, en este caso nos encontramos con FIFA, una saga publicado anualmente por Electronic Arts bajo el sello de EA Sports. Esta saga comenzó en 1993 y se destaco por ser el primero en tener una licencia oficial de la FIFA.
+Para este análisis, distinto a los anteriores, usaremos enteramente Power BI, tanto para la limpieza, análisis y visualización de datos.</description>
+    </item>
+    
     <item>
       <title>Potenciar Trabajo</title>
       <link>https://vtorcjuarez.github.io/TheSite/post/potenciar_trabajo/</link>
