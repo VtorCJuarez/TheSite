@@ -252,33 +252,39 @@ Como siempre, un gusto de nuevo encontrarme en otro análisis. Esta vez les trai
 <p>A la hora de elegir nuestras herramientas, nos volvemos a encontrar con un viejo conocido, que es el uso de Python con sus diversas librerías, para el análisis de datos, siempre muy útil y versátil a la hora de un análisis completo.</p>
 <h2 id="tipo-de-cartas">Tipo de cartas</h2>
 <p>Como algunos recordaran, este juego consistía en tener un mazo con distintos tipo de cartas, que luego durante la partida uno iba colocando en el campo de batalla, estas se dividían en tres:</p>
-<p><strong>Monster    5339
-Spell      1653
-Trap       1381</strong></p>
+<ul>
+<li><strong>Monster    5339</strong></li>
+<li><strong>Spell      1653</strong></li>
+<li><strong>Trap       1381</strong></li>
+</ul>
 <p>Dentro de las reglas del juego, que varían según donde se las lea, se puede tener un Deck Principal de entre 40 a 60 cartas en total, un Deck Extra de hasta 15 cartas y un Side Deck (o Deck de Soporte) de hasta 15 cartas también. Si tomamos estos datos, podríamos calcular la cantidad de mazos distintos posibles. Tomando el caso mas fácil de solo poseer un Deck de 40 cartas, y que las mismas se puedan repetir, nos encontraríamos que son posibles, con nuestros datos actuales, unos 8.2270407477684396088358510287882e+156 Decks posibles.</p>
 <p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/Tipo%20de%20cartas.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/Tipo%20de%20cartas.png?raw=true"></p>
 <p>Introduciéndonos aun mas en como se clasificaban estas cartas, no solo se quedaban ahí, estos tipos además poseían su rareza, desde las comunes hasta las extremadamente raras:</p>
-<p><strong>Common: 3873
-Rare: 1501
-Super Rare: 1136
-Ultra Rare: 968
-Secret Rare: 552
-Short Print: 255
-Premium Gold Rare: 61
-Super Short Print: 12
-Ghost Rare: 10
-Starlight Rare: 5</strong></p>
+<ul>
+<li><strong>Common: 3873</strong></li>
+<li><strong>Rare: 1501</strong></li>
+<li><strong>Super Rare: 1136</strong></li>
+<li><strong>Ultra Rare: 968</strong></li>
+<li><strong>Secret Rare: 552</strong></li>
+<li><strong>Short Print: 255</strong></li>
+<li><strong>Premium Gold Rare: 61</strong></li>
+<li><strong>Super Short Print: 12</strong></li>
+<li><strong>Ghost Rare: 10</strong></li>
+<li><strong>Starlight Rare: 5</strong></li>
+</ul>
 <p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/rareza.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/rareza.png?raw=true"></p>
 <p>Como curiosidad, busque una de estas cartas <strong>Starlight Rare</strong>, que solo hay 5, y todas son del tipo monstruo.</p>
 <p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/PHRA-EN100%20StR.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/PHRA-EN100%20StR.png?raw=true"></p>
 <p>Si nos adentramos aun mas, el tipo monstruo posee, un dato adicional y es su atributo:</p>
-<p><strong>DARK: 1446
-EARTH: 1296
-LIGHT: 1076
-WIND: 534
-WATER: 523
-FIRE: 463
-DIVINE: 1</strong></p>
+<ul>
+<li><strong>DARK: 1446</strong></li>
+<li><strong>EARTH: 1296</strong></li>
+<li><strong>LIGHT: 1076</strong></li>
+<li><strong>WIND: 534</strong></li>
+<li><strong>WATER: 523</strong></li>
+<li><strong>FIRE: 463</strong></li>
+<li><strong>DIVINE: 1</strong></li>
+</ul>
 <p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/atributo.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/atributo.png?raw=true"></p>
 <p>Lo que llama la atención es el atributo DIVINE, que posee nada mas que 1 solo monstruo, no es mas que el famoso “The Winged Dragon of Ra” pero en modo esfera.</p>
 <p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GFP2-EN180%20GR.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GFP2-EN180%20GR.png?raw=true"></p>
@@ -292,18 +298,20 @@ DIVINE: 1</strong></p>
 <p>Si le damos un vistazo rápido, podemos ver como las mayoría de los datos están concentrados en las zonas de 0 a 3000 de ambas variables, y los puntos mas alejados los veremos en mas detalle, dentro de un momento.</p>
 <p>Estos monstruos, un dato que los caracteriza, es que poseen un nivel, que es conocido como la cantidad de estrellas, y dentro del juego proporcionan un aproximado de cuán poderoso es el monstruo en cuestión.</p>
 <p>La distribución de nivel es la siguiente:</p>
-<p><strong>4☆: 1538
-3☆: 780
-2☆: 413
-1☆: 411
-8☆: 395
-6☆: 380
-5☆: 365
-7☆: 289
-10☆: 114
-9☆: 80
-11☆: 21
-12☆: 19</strong></p>
+<ul>
+<li><strong>4☆: 1538</strong></li>
+<li><strong>3☆: 780</strong></li>
+<li><strong>2☆: 413</strong></li>
+<li><strong>1☆: 411</strong></li>
+<li><strong>8☆: 395</strong></li>
+<li><strong>6☆: 380</strong></li>
+<li><strong>5☆: 365</strong></li>
+<li><strong>7☆: 289</strong></li>
+<li><strong>10☆: 114</strong></li>
+<li><strong>9☆: 80</strong></li>
+<li><strong>11☆: 21</strong></li>
+<li><strong>12☆: 19</strong></li>
+</ul>
 <p><img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/estrellas.png?raw=true" alt="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/estrellas.png?raw=true"></p>
 <p>Siendo de sorprender , que un tercio de las cartas son monstruos de 4☆, seguidos por 3☆ y 2☆, lo que no es sorpresa, es que las cartas con un nivel de 11☆ y 12☆, sean las que menor cantidad posean.</p>
 <p>Volviendo al tema del ataque y defensa, si buscamos en cada caso, el top 5, nos encontraríamos con la siguiente comparación.</p>

@@ -17,9 +17,9 @@ A la hora de elegir nuestras herramientas, nos volvemos a encontrar con un viejo
 
 Como algunos recordaran, este juego consistía en tener un mazo con distintos tipo de cartas, que luego durante la partida uno iba colocando en el campo de batalla, estas se dividían en tres:
 
-**Monster    5339
-Spell      1653
-Trap       1381**
+- **Monster    5339**
+- **Spell      1653**
+- **Trap       1381**
 
 Dentro de las reglas del juego, que varían según donde se las lea, se puede tener un Deck Principal de entre 40 a 60 cartas en total, un Deck Extra de hasta 15 cartas y un Side Deck (o Deck de Soporte) de hasta 15 cartas también. Si tomamos estos datos, podríamos calcular la cantidad de mazos distintos posibles. Tomando el caso mas fácil de solo poseer un Deck de 40 cartas, y que las mismas se puedan repetir, nos encontraríamos que son posibles, con nuestros datos actuales, unos 8.2270407477684396088358510287882e+156 Decks posibles.
 
@@ -27,16 +27,16 @@ Dentro de las reglas del juego, que varían según donde se las lea, se puede te
 
 Introduciéndonos aun mas en como se clasificaban estas cartas, no solo se quedaban ahí, estos tipos además poseían su rareza, desde las comunes hasta las extremadamente raras:
 
-**Common: 3873
-Rare: 1501
-Super Rare: 1136
-Ultra Rare: 968
-Secret Rare: 552
-Short Print: 255
-Premium Gold Rare: 61
-Super Short Print: 12
-Ghost Rare: 10
-Starlight Rare: 5**
+- **Common: 3873**
+- **Rare: 1501**
+- **Super Rare: 1136**
+- **Ultra Rare: 968**
+- **Secret Rare: 552**
+- **Short Print: 255**
+- **Premium Gold Rare: 61**
+- **Super Short Print: 12**
+- **Ghost Rare: 10**
+- **Starlight Rare: 5**
 
 ![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/rareza.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/rareza.png?raw=true)
 
@@ -46,13 +46,13 @@ Como curiosidad, busque una de estas cartas **Starlight Rare**, que solo hay 5, 
 
 Si nos adentramos aun mas, el tipo monstruo posee, un dato adicional y es su atributo: 
 
-**DARK: 1446
-EARTH: 1296
-LIGHT: 1076
-WIND: 534
-WATER: 523
-FIRE: 463
-DIVINE: 1**
+- **DARK: 1446**
+- **EARTH: 1296**
+- **LIGHT: 1076**
+- **WIND: 534**
+- **WATER: 523**
+- **FIRE: 463**
+- **DIVINE: 1**
 
 ![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/atributo.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/atributo.png?raw=true)
 
@@ -80,18 +80,18 @@ Estos monstruos, un dato que los caracteriza, es que poseen un nivel, que es con
 
 La distribución de nivel es la siguiente:
 
-**4☆: 1538
-3☆: 780
-2☆: 413
-1☆: 411
-8☆: 395
-6☆: 380
-5☆: 365
-7☆: 289
-10☆: 114
-9☆: 80
-11☆: 21
-12☆: 19**
+- **4☆: 1538**
+- **3☆: 780**
+- **2☆: 413**
+- **1☆: 411**
+- **8☆: 395**
+- **6☆: 380**
+- **5☆: 365**
+- **7☆: 289**
+- **10☆: 114**
+- **9☆: 80**
+- **11☆: 21**
+- **12☆: 19**
 
 ![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/estrellas.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/estrellas.png?raw=true)
 
