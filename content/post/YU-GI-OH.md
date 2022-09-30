@@ -42,7 +42,7 @@ Introduciéndonos aun mas en como se clasificaban estas cartas, no solo se queda
 
 Como curiosidad, busque una de estas cartas **Starlight Rare**, que solo hay 5, y todas son del tipo monstruo.
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/PHRA-EN100%20StR.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/PHRA-EN100%20StR.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/PHRA-EN100%20StR.png?raw=true" alt="PHRA-EN100 StR.png" width="200" height="250">
 
 Si nos adentramos aun mas, el tipo monstruo posee, un dato adicional y es su atributo: 
 
@@ -54,11 +54,11 @@ Si nos adentramos aun mas, el tipo monstruo posee, un dato adicional y es su atr
 - **FIRE: 463**
 - **DIVINE: 1**
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/atributo.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/atributo.png?raw=true)
+![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/atributo.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/atributo.png?raw=true) 
 
 Lo que llama la atención es el atributo DIVINE, que posee nada mas que 1 solo monstruo, no es mas que el famoso “The Winged Dragon of Ra” pero en modo esfera. 
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GFP2-EN180%20GR.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GFP2-EN180%20GR.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GFP2-EN180%20GR.png?raw=true" alt="GFP2-EN180 GR.png" width="200" height="250">
 
 De lo que no hablamos es que estas cartas, salen a la venta en sets, de los cuales según nuestros datos son 86 diferentes sets publicados, de los que podemos destacar, por poseer una mayor cantidad de tipo de cartas, son los siguientes:
 
@@ -109,15 +109,15 @@ Los 3 que mas ataque poseen son:
 - **Rocket Arrow Expres**
 - **Flower Cardian Lightflare**
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/REDU-EN044%20UR.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/REDU-EN044%20UR.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/REDU-EN044%20UR.png?raw=true" alt="REDU-EN044 UR.png" width="200" height="250">
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GAOV-EN016%20R.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GAOV-EN016%20R.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GAOV-EN016%20R.png?raw=true" alt="GAOV-EN016 R.png" width="200" height="250">
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/RATE-EN045%20R.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/RATE-EN045%20R.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/RATE-EN045%20R.png?raw=true" alt="RATE-EN045 R.png" width="200" height="250">
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/BODE-EN028%20UR.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/BODE-EN028%20UR.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/BODE-EN028%20UR.png?raw=true" alt="BODE-EN028 UR.png" width="200" height="250">
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/DANE-EN012%20R.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/DANE-EN012%20R.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/DANE-EN012%20R.png?raw=true" alt="DANE-EN012 R.png" width="200" height="250">
 
 Si aplicamos el mismo razonamiento para los monstruos con mas defensa nos encontraremos con lo siguiente.
 
@@ -130,15 +130,15 @@ Las 2 que mas defensa poseen son:
 - **T.G. Halberd Cannon/Assault Mode**
 - **Quintet Magician**
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/DANE-EN012%20R.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/DANE-EN012%20R.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/DANE-EN012%20R.png?raw=true" alt="DANE-EN012 R.png" width="200" height="250">
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GFP2-EN127%20UR.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GFP2-EN127%20UR.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/GFP2-EN127%20UR.png?raw=true" alt="GFP2-EN127 UR.png" width="200" height="250">
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/BODE-EN028%20UR.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/BODE-EN028%20UR.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/BODE-EN028%20UR.png?raw=true" alt="BODE-EN028 UR.png" width="200" height="250">
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/EXVC-EN043%20UR.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/EXVC-EN043%20UR.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/EXVC-EN043%20UR.png?raw=true" alt="EXVC-EN043 UR.png" width="200" height="250">
 
-![https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/SOI-EN003%20UR.png?raw=true](https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/SOI-EN003%20UR.png?raw=true)
+<img src="https://github.com/VtorCJuarez/TheSite/blob/main/static/yu%20gi%20img/SOI-EN003%20UR.png?raw=true" alt="SOI-EN003 UR.png" width="200" height="250">
 
 Para invocar nuestra carta mas poderosa (**Quintet Magician**), es necesario:
 
